@@ -13,23 +13,17 @@ const ExpenseForm = (props) => {
   //   enteredDate: ''
   // });
 
-  const titleChangeHandler = (event) => {
-     setEnteredTitle({
-      eneteredTitle: event.target.value,
-     })
-  }
+const titleChangeHandler = (event) => {
+    setEnteredTitle(event.target.value);
+  };
 
-    const amountChangeHandler = (event) => {
-     setEnteredAmount({
-      eneteredAmount: event.target.value,
-     })
-  }
+  const amountChangeHandler = (event) => {
+    setEnteredAmount(event.target.value);
+  };
 
-    const dateChangeHandler = (event) => {
-     setEnteredDate({
-      eneteredDate: event.target.value,
-     })
-  }
+  const dateChangeHandler = (event) => {
+    setEnteredDate(event.target.value);
+  };
 
   const submitHandler = (event) => {
     // prevent default method: prevents a request from being sent
